@@ -1,3 +1,5 @@
+![terraform-lint](https://github.com/ptran32/terraform-aws-minimal/workflows/terraform-lint/badge.svg)
+
 # terraform-aws-minimal
 Terraform modules to deploy basic VPC with a bastion host and instances
 
