@@ -7,11 +7,17 @@ This repo has a set of modules for deployment of network, instances and a bastio
 It is only for test purposes, and might not have all requirements for a production setup (e.g network-wise).
 
 # usage
-Make sure to export your AWS access key / secret key as variable
 
-in live/dev/aws-minimal-setup repo:
-- terraform init
-- terraform apply (check also the plan output here ;) )
+1 - Export your AWS access key / secret key as variable
+
+2 - Add your public key in terraform.tfvars file (for SSH connection to instances)
+In live/dev/aws-minimal-setup repo, replace the placeholder with yout public key: 
+public_key = "PLACE_YOUR_PUBLIC_KEY"
+
+3 - Apply the configuration
+terraform init
+terraform apply (check also the plan output here ;) )
+
 
 # Module VPC
 ## Requirements
