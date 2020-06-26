@@ -1,6 +1,6 @@
 output "public_ip" {
   description = "List of public IP assigned to the instances"
-  value = aws_instance.this.*.public_ip
+  value       = aws_instance.this.*.public_ip
 }
 
 output "private_ip" {

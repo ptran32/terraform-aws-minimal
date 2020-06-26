@@ -25,7 +25,7 @@ module "private_vm_sg" {
   environment = "dev"
   component   = "app"
   vpc_id      = data.aws_vpc.selected.id
-  sg_ref = [module.bastion_sg.id]
+  sg_ref      = [module.bastion_sg.id]
 }
 
 module "bastion" {
