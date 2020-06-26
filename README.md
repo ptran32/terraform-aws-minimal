@@ -6,6 +6,13 @@ Terraform modules to deploy basic VPC with a bastion host and instances
 This repo has a set of modules for deployment of network, instances and a bastion host on AWS.
 It is only for test purposes, and might not have all requirements for a production setup (e.g network-wise).
 
+# usage
+Make sure to export your AWS access key / secret key as variable
+
+in live/dev/aws-minimal-setup repo:
+- terraform init
+- terraform apply (check also the plan output here ;) )
+
 # Module VPC
 ## Requirements
 
